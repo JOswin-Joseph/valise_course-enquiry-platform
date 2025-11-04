@@ -1,0 +1,387 @@
+{
+  "users": {
+    "admin": {
+      "id": "admin-001",
+      "email": "admin@takeoffupskill.com",
+      "password": "admin123",
+      "role": "admin",
+      "name": "Admin User"
+    },
+    "user": {
+      "id": "user-001",
+      "email": "student@example.com",
+      "password": "student123",
+      "role": "user",
+      "name": "John Doe"
+    }
+  },
+  "courses": [
+    {
+      "id": "course-001",
+      "title": "Full Stack Web Development Bootcamp",
+      "slug": "full-stack-web-development-bootcamp",
+      "description": "Master modern web development with React, Node.js, and MongoDB. Build production-ready applications from scratch.",
+      "shortDescription": "Become a full-stack developer in 12 weeks with hands-on projects and mentor support.",
+      "category": "Web Development",
+      "level": "Beginner to Advanced",
+      "duration": "12 weeks",
+      "price": 499,
+      "originalPrice": 3999,
+      "instructor": "inst-001",
+      "rating": 4.8,
+      "studentsEnrolled": 1247,
+      "thumbnail": "https://images.pexels.com/photos/11035471/pexels-photo-11035471.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "featured": true,
+      "syllabus": [
+        {
+          "week": 1,
+          "title": "HTML, CSS & JavaScript Fundamentals",
+          "topics": ["HTML5 Semantic Elements", "CSS Grid & Flexbox", "ES6+ JavaScript"]
+        },
+        {
+          "week": 2,
+          "title": "React Fundamentals",
+          "topics": ["Components & Props", "State Management", "Hooks"]
+        },
+        {
+          "week": 3,
+          "title": "Advanced React",
+          "topics": ["Context API", "Performance Optimization", "Custom Hooks"]
+        },
+        {
+          "week": 4,
+          "title": "Backend with Node.js",
+          "topics": ["Express.js", "RESTful APIs", "Authentication"]
+        }
+      ],
+      "features": [
+        "Live coding sessions",
+        "1-on-1 mentorship",
+        "Career guidance",
+        "Lifetime access",
+        "Certificate of completion"
+      ]
+    },
+    {
+      "id": "course-002",
+      "title": "Data Science & Machine Learning Masterclass",
+      "slug": "data-science-machine-learning-masterclass",
+      "description": "Learn Python, statistics, machine learning algorithms, and deep learning. Work on real-world datasets.",
+      "shortDescription": "Transform your career with in-demand data science skills and hands-on ML projects.",
+      "category": "Data Science",
+      "level": "Intermediate",
+      "duration": "16 weeks",
+      "price": 499,
+      "originalPrice": 4499,
+      "instructor": "inst-002",
+      "rating": 4.9,
+      "studentsEnrolled": 892,
+      "thumbnail": "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "featured": true,
+      "syllabus": [],
+      "features": [
+        "Real-world projects",
+        "Industry mentors",
+        "Job placement support",
+        "Cloud platform credits"
+      ]
+    },
+    {
+      "id": "course-003",
+      "title": "UI/UX Design Professional Certificate",
+      "slug": "ui-ux-design-professional-certificate",
+      "description": "Master Figma, user research, wireframing, prototyping, and design systems. Build a portfolio that stands out.",
+      "shortDescription": "Design beautiful, user-centered digital experiences with industry-standard tools.",
+      "category": "Design",
+      "level": "Beginner",
+      "duration": "10 weeks",
+      "price": 499,
+      "originalPrice": 2499,
+      "instructor": "inst-003",
+      "rating": 4.7,
+      "studentsEnrolled": 1589,
+      "thumbnail": "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "featured": false,
+      "syllabus": [],
+      "features": [
+        "Portfolio building",
+        "Design critique sessions",
+        "Industry case studies"
+      ]
+    },
+    {
+      "id": "course-004",
+      "title": "Cloud Computing with AWS",
+      "slug": "cloud-computing-aws",
+      "description": "Become AWS certified. Learn EC2, S3, Lambda, and more. Deploy scalable cloud infrastructure.",
+      "shortDescription": "Master Amazon Web Services and become a certified cloud professional.",
+      "category": "Cloud Computing",
+      "level": "Intermediate",
+      "duration": "8 weeks",
+      "price": 499,
+      "originalPrice": 3299,
+      "instructor": "inst-001",
+      "rating": 4.6,
+      "studentsEnrolled": 743,
+      "thumbnail": "https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "featured": false,
+      "syllabus": [],
+      "features": ["AWS certification prep", "Hands-on labs", "Real-world scenarios"]
+    },
+    {
+      "id": "course-005",
+      "title": "Mobile App Development with React Native",
+      "slug": "mobile-app-development-react-native",
+      "description": "Build cross-platform mobile apps for iOS and Android with React Native. Deploy to app stores.",
+      "shortDescription": "Create stunning mobile apps with JavaScript and React Native.",
+      "category": "Mobile Development",
+      "level": "Intermediate",
+      "duration": "10 weeks",
+      "price": 499,
+      "originalPrice": 3499,
+      "instructor": "inst-002",
+      "rating": 4.7,
+      "studentsEnrolled": 634,
+      "thumbnail": "https://images.pexels.com/photos/4218883/pexels-photo-4218883.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "featured": false,
+      "syllabus": [],
+      "features": ["iOS & Android deployment", "Push notifications", "App monetization"]
+    },
+    {
+      "id": "course-006",
+      "title": "Digital Marketing & SEO Mastery",
+      "slug": "digital-marketing-seo-mastery",
+      "description": "Master SEO, content marketing, social media, PPC, and analytics. Grow your online presence.",
+      "shortDescription": "Learn proven strategies to drive traffic and conversions for any business.",
+      "category": "Marketing",
+      "level": "Beginner",
+      "duration": "6 weeks",
+      "price": 499,
+      "originalPrice": 1999,
+      "instructor": "inst-004",
+      "rating": 4.5,
+      "studentsEnrolled": 2134,
+      "thumbnail": "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "featured": false,
+      "syllabus": [],
+      "features": ["Google Ads certification", "SEO tools access", "Campaign templates"]
+    }
+  ],
+  "instructors": [
+    {
+      "id": "inst-001",
+      "name": "Sarah Mitchell",
+      "title": "Senior Full Stack Developer",
+      "bio": "Former tech lead at Google with 10+ years of experience. Passionate about teaching practical, industry-relevant skills.",
+      "expertise": ["JavaScript", "React", "Node.js", "AWS"],
+      "image": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "rating": 4.9,
+      "studentsCount": 5432,
+      "coursesCount": 8,
+      "social": {
+        "linkedin": "#",
+        "twitter": "#",
+        "github": "#"
+      }
+    },
+    {
+      "id": "inst-002",
+      "name": "Dr. Rajesh Kumar",
+      "title": "Data Science Lead",
+      "bio": "PhD in Machine Learning from MIT. Previously led data teams at Amazon and Microsoft.",
+      "expertise": ["Python", "Machine Learning", "Deep Learning", "Statistics"],
+      "image": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "rating": 4.9,
+      "studentsCount": 4231,
+      "coursesCount": 6,
+      "social": {
+        "linkedin": "#",
+        "twitter": "#"
+      }
+    },
+    {
+      "id": "inst-003",
+      "name": "Emily Chen",
+      "title": "Lead Product Designer",
+      "bio": "Award-winning designer with 8 years at top design agencies. Specializes in user-centered design.",
+      "expertise": ["UI/UX Design", "Figma", "Design Systems", "User Research"],
+      "image": "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "rating": 4.8,
+      "studentsCount": 3821,
+      "coursesCount": 5,
+      "social": {
+        "linkedin": "#",
+        "dribbble": "#"
+      }
+    },
+    {
+      "id": "inst-004",
+      "name": "Michael Thompson",
+      "title": "Digital Marketing Strategist",
+      "bio": "Grew multiple startups from 0 to millions in revenue. Expert in growth marketing and SEO.",
+      "expertise": ["SEO", "Content Marketing", "PPC", "Analytics"],
+      "image": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "rating": 4.7,
+      "studentsCount": 6543,
+      "coursesCount": 12,
+      "social": {
+        "linkedin": "#",
+        "twitter": "#"
+      }
+    }
+  ],
+  "blogPosts": [
+    {
+      "id": "blog-001",
+      "title": "10 Essential Skills Every Developer Needs in 2024",
+      "slug": "10-essential-skills-developers-2024",
+      "excerpt": "The tech landscape is evolving rapidly. Here are the must-have skills to stay competitive.",
+      "content": "Full article content would go here...",
+      "author": "Sarah Mitchell",
+      "authorImage": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "date": "2024-01-15",
+      "readTime": "8 min read",
+      "category": "Career",
+      "thumbnail": "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "tags": ["Career", "Skills", "Development"]
+    },
+    {
+      "id": "blog-002",
+      "title": "How to Build Your First Machine Learning Model",
+      "slug": "build-first-machine-learning-model",
+      "excerpt": "A beginner-friendly guide to understanding and creating your first ML model using Python.",
+      "content": "Full article content would go here...",
+      "author": "Dr. Rajesh Kumar",
+      "authorImage": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "date": "2024-01-10",
+      "readTime": "12 min read",
+      "category": "Data Science",
+      "thumbnail": "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "tags": ["Machine Learning", "Python", "Tutorial"]
+    },
+    {
+      "id": "blog-003",
+      "title": "The Future of Remote Learning: Trends to Watch",
+      "slug": "future-remote-learning-trends",
+      "excerpt": "Exploring how online education is transforming and what it means for learners worldwide.",
+      "content": "Full article content would go here...",
+      "author": "Emily Chen",
+      "authorImage": "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "date": "2024-01-05",
+      "readTime": "6 min read",
+      "category": "Education",
+      "thumbnail": "https://images.pexels.com/photos/4145356/pexels-photo-4145356.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "tags": ["Education", "Remote Learning", "Trends"]
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "test-001",
+      "name": "Alex Johnson",
+      "role": "Software Engineer at Google",
+      "content": "TakeOff Upskill transformed my career. The practical projects and mentor support helped me land my dream job at Google!",
+      "rating": 5,
+      "image": "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=400"
+    },
+    {
+      "id": "test-002",
+      "name": "Priya Sharma",
+      "role": "Data Scientist at Amazon",
+      "content": "The Data Science course was incredibly comprehensive. I went from knowing nothing about ML to deploying models in production.",
+      "rating": 5,
+      "image": "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=400"
+    },
+    {
+      "id": "test-003",
+      "name": "David Lee",
+      "role": "UX Designer at Apple",
+      "content": "Best investment I made in my career. The UI/UX course gave me the skills and portfolio to break into big tech.",
+      "rating": 5,
+      "image": "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=400"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-001",
+      "question": "What are the prerequisites for enrolling?",
+      "answer": "Most of our beginner courses require no prior experience. For intermediate and advanced courses, we recommend having basic knowledge of the subject area. Each course page lists specific prerequisites."
+    },
+    {
+      "id": "faq-002",
+      "question": "How long do I have access to course materials?",
+      "answer": "Once enrolled, you have lifetime access to all course materials, including future updates and additional content."
+    },
+    {
+      "id": "faq-003",
+      "question": "Do you offer job placement assistance?",
+      "answer": "Yes! We provide career guidance, resume reviews, interview preparation, and connect you with our hiring partners for job opportunities."
+    },
+    {
+      "id": "faq-004",
+      "question": "What is your refund policy?",
+      "answer": "We offer a 30-day money-back guarantee. If you're not satisfied with the course within the first 30 days, we'll refund your full payment, no questions asked."
+    },
+    {
+      "id": "faq-005",
+      "question": "Are the courses self-paced or scheduled?",
+      "answer": "Our courses are designed to be flexible. You can learn at your own pace, but we also have scheduled live sessions, office hours, and cohort-based learning for enhanced interaction."
+    },
+    {
+      "id": "faq-006",
+      "question": "Will I receive a certificate upon completion?",
+      "answer": "Yes, you'll receive a verified certificate of completion that you can share on LinkedIn and add to your resume."
+    }
+  ],
+  "pricingPlans": [
+    {
+      "id": "plan-001",
+      "name": "Single Course",
+      "price": "Varies",
+      "description": "Perfect for focused learning",
+      "features": [
+        "Access to one course",
+        "Lifetime access",
+        "Certificate of completion",
+        "Community support",
+        "Course materials"
+      ],
+      "cta": "Browse Courses",
+      "popular": false
+    },
+    {
+      "id": "plan-002",
+      "name": "Pro Bundle",
+      "price": 4999,
+      "originalPrice": 7999,
+      "description": "Best value for career transformation",
+      "features": [
+        "Access to 3 courses",
+        "Lifetime access",
+        "1-on-1 mentorship (5 sessions)",
+        "Priority support",
+        "Job placement assistance",
+        "All certificates"
+      ],
+      "cta": "Get Started",
+      "popular": true
+    },
+    {
+      "id": "plan-003",
+      "name": "All-Access Pass",
+      "price": 9999,
+      "originalPrice": 15999,
+      "description": "Ultimate learning experience",
+      "features": [
+        "Unlimited course access",
+        "Lifetime access to all courses",
+        "Unlimited 1-on-1 mentorship",
+        "Premium support",
+        "Dedicated career coach",
+        "Interview preparation",
+        "All certificates"
+      ],
+      "cta": "Go Premium",
+      "popular": false
+    }
+  ]
+}

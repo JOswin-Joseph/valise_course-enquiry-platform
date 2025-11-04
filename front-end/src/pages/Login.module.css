@@ -1,0 +1,254 @@
+/* FINAL — Polished Glassmorphism Login Page */
+
+:root {
+  --bg-1: #0b1120;
+  --bg-2: #1e2746;
+  --accent: #3b82f6;
+  --accent-light: #60a5fa;
+  --error: #ef4444;
+  --text-primary: #0f172a;
+  --text-secondary: #64748b;
+  --radius: 16px;
+}
+
+/* Background */
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at 20% 30%, rgba(59, 130, 246, 0.15), transparent 60%),
+              radial-gradient(circle at 80% 70%, rgba(96, 165, 250, 0.15), transparent 60%),
+              linear-gradient(135deg, var(--bg-1), var(--bg-2));
+  font-family: 'Inter', sans-serif;
+  padding: 20px;
+}
+
+/* Frosted card */
+.cardWrap {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  padding: 40px 32px;
+  z-index: 2;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.logoCircle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, rgba(59,130,246,0.2), rgba(96,165,250,0.15));
+  display: grid;
+  place-items: center;
+  margin: 0 auto 1rem;
+  color: var(--accent-light);
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* Input fields */
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.fieldInner {
+  position: relative;
+}
+
+.leftIcon {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  color: #a0aec0;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 12px 12px 42px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.input:focus {
+  border-color: var(--accent-light);
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 0 10px rgba(59,130,246,0.3);
+}
+
+/* Floating label */
+.flabel {
+  position: absolute;
+  left: 42px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #cbd5e1;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+
+.input:focus + .flabel,
+.input:not(:placeholder-shown) + .flabel {
+  top: -8px;
+  left: 36px;
+  font-size: 0.75rem;
+  color: var(--accent-light);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0 6px;
+  border-radius: 4px;
+}
+
+/* Password Eye Button */
+.eyeBtn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #cbd5e1;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.eyeBtn:hover {
+  color: var(--accent-light);
+}
+
+/* Button */
+.actions {
+  margin-top: 0.5rem;
+}
+
+.primary {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, var(--accent-light), var(--accent));
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 8px 20px rgba(59,130,246,0.3);
+}
+
+.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(59,130,246,0.4);
+}
+
+/* Error */
+.err {
+  border-color: rgba(239, 68, 68, 0.6) !important;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.error {
+  color: #f87171;
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+}
+
+/* Divider */
+.orRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 1.5rem;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.orText {
+  color: #cbd5e1;
+  font-size: 0.9rem;
+}
+
+/* Footer */
+.signup {
+  text-align: center;
+  color: #cbd5e1;
+  margin-top: 1rem;
+}
+
+.signup a {
+  color: var(--accent-light);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.signup a:hover {
+  text-decoration: underline;
+}
+
+/* Demo box */
+.demo {
+  margin-top: 1.5rem;
+  text-align: center;
+  color: #cbd5e1;
+  font-size: 0.85rem;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.demo strong {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: #e2e8f0;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .cardWrap {
+    padding: 28px 20px;
+    backdrop-filter: blur(16px);
+  }
+  .title {
+    font-size: 1.3rem;
+  }
+}
