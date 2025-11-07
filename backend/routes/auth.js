@@ -105,6 +105,14 @@ router.post("/login", async (req, res) => {
     return res.status(500).json({ error: "Internal Server Error" });
   }
 });
+const authMiddleware = require("../middleware/auth");
+
+// ✅ GET LOGGED-IN USER (Protected route)
+router.get("/me", authMiddleware, async (req, res) => {
+  res.json({
+    user: req.user,
+  });
+});
 
 
 module.exports = router;
